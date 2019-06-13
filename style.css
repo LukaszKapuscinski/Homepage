@@ -1,3 +1,14 @@
+/* My color pallet
+
+Sienna          #965C2A
+Dark SLate Gray #415365
+Dark Gray       #BAB5A4
+Dark Slate Gray #1F252A
+Dim Gray        #6E665F
+
+*/
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,80 +16,104 @@
 }
 
 body {
-    background-color: #555;
+    background-color: #BAB5A4;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .header {
     padding: 20px;
-    background-color: #ddd;
+    background-color: #1F252A;
     text-align: center;
+    color: #BAB5A4;
 
+}
+
+.header__h1 {
+    font-size: 35px;
+    color: #BAB5A4;
+    text-align: center;
+    padding: 10px 10px;
 }
 
 .section {
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
 
 }
 
-.h1 {
+.section__h1 {
 
     font-size: 35px;
-    color: #444;
+    color: #1F252A;
     text-align: center;
     padding: 10px 10px;
 }
 
-.h2 {
+.section__h2 {
     font-size: 30px;
-    color: #333;
+    color: #1F252A;
     padding: 10px 10px;
 }
 
-.h3 {
+.section__h3 {
     font-size: 25px;
-    color: #222;
-    padding: 10px 10px;
+    color: #6E665F;
+    padding: 10px 50px;
 }
 
-.h4 {
+.section__h4 {
     font-size: 20px;
-    color: #111;
-    padding: 10px 10px;
+    color: #415365;
+    padding: 10px 50px;
 }
 
-.paragraph {
+.section__paragraph {
+    width: 80%;
+    margin: auto;
     font-size: 16px;
     color: #000;
     padding: 10px 40px;
 }
+/*
+.section__paragraph-2column {
+    display: flex;
+    justify-items: space-between;
+    margin: auto;
+    padding: 10px 10px;
+    width: 35%;
 
+}
+*/
 .main {
-    background-color: #eee;
+
     padding: 30px;
 }
 
 .wraper {
-    width: 1200px;
+    width: 1000px;
     margin: auto;
 }
 
-.navigation {
-    padding: 30px;
-    list-style-type: none;
-}
+
 
 .footer {
     padding: 20px;
-    background-color: #ccc;
+    background-color: #1F252A;
     position: relative;
     text-align: center;
+}
+.footer__h2 {
+    font-size: 30px;
+    color: #BAB5A4;
 }
 
 .button {
     position: fixed;
     bottom: 60px;
     right: 90px;
-    background-color: #fff;
+    background-color:#415365;
     padding: 20px;
 }
 
@@ -86,24 +121,25 @@ body {
     background-color: #999;
 }
 
-.link {
-    text-decoration-line: none;
-
-
+.navigation {
+    padding: 30px;
+   
 }
 
-li {
+.navigation__ul {
+    list-style-type: none;
+}
+    
+
+.navigation__li {
     display: inline-block;
+    background-color:#415365;
     padding: 10px 10px;
-    background-color: #888;
     min-width: 90px;
 
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
-    left: 0;
-    min-width: 10px;
-    min-height: 10px;
+.navigation__a {
+    color: #BAB5A4;
+
 }
