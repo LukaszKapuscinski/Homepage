@@ -43,11 +43,12 @@ body {
     color: #BAB5A4;
     background-color: #415365;
     padding: 20px;
+    text-decoration: none;
 }
 
 .button:hover {
-    background-color: #BAB5A4;
-    color: #1F252A;
+    background-color:#1F252A;
+    color: #BAB5A4;
 }
 
 
@@ -55,8 +56,8 @@ body {
     display: flex;
     justify-items: flex-start;
     align-items: flex-start;
-    
-    
+
+
 }
 
 .footer {
@@ -127,21 +128,25 @@ hr {
 
 .navigation__li {
     display: inline-block;
-    background-color: #415365;
-    padding: 10px 10px;
-    min-width: 90px;
-
+    
+    
 }
 
-.navigation__li:hover {
-    background-color: #BAB5A4;
-    color: #415365;
-}
+
 
 .navigation__a {
+    display: inline-block;
     color: #BAB5A4;
     text-decoration: none;
+    padding: 10px 10px;
+    min-width: 120px;
+    background-color: #415365;
 
+}
+
+.navigation__a:hover {
+    background-color: #BAB5A4;
+    color: #415365;
 }
 
 .section {
