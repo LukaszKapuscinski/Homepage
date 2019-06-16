@@ -16,6 +16,7 @@ Dim Gray        #6E665F
     font-family: 'Poppins', sans-serif;
 }
 
+
 .article__h4 {
     font-family: 'Noto Serif', serif;
     font-size: 20px;
@@ -51,6 +52,15 @@ body {
     color: #BAB5A4;
 }
 
+.button:active {
+    transform: scale(0.90);
+}
+
+.button__icon {
+    font-size: 1.2em; 
+    color: #BAB5A4;
+    padding: 0 10px 0 0;
+}
 
 .container {
     display: flex;
@@ -135,19 +145,28 @@ hr {
 
 
 .navigation__a {
+    font-size: 1.5rem;
     display: inline-block;
     color: #BAB5A4;
     text-decoration: none;
     padding: 10px 10px;
     min-width: 120px;
+    
     background-color: #415365;
 
 }
 
 .navigation__a:hover {
+   
+    
     background-color: #BAB5A4;
     color: #415365;
 }
+
+.navigation__a:active {
+    transform: scale(0.95);
+}
+
 
 .section {
     padding: 40px 20px;
