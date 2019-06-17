@@ -61,6 +61,9 @@ body {
     color: #BAB5A4;
     padding: 0 10px 0 0;
 }
+.button__icon:hover {
+    color: #1F252A;
+}
 
 .container {
     display: flex;
@@ -141,11 +144,16 @@ hr {
     
     
 }
+.navigation__li:hover {
+    color: #415365;
+    
+    
+}
 
 
 
 .navigation__a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: inline-block;
     color: #BAB5A4;
     text-decoration: none;
