@@ -18,11 +18,16 @@ hr {
     width: 50%;
 }
 
-* {
+html {
     box-sizing: border-box;
+}
+
+*,*:before , *:after {
+    box-sizing: inherit;
+}
+
+* {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 .article__h4 {
@@ -35,6 +40,7 @@ hr {
 .article__paragraph {
     color: #000;
     font-size: 16px;
+    line-height: 24px;
     margin: 0 auto;
     padding: 10px 40px;
     width: 80%;
@@ -61,7 +67,7 @@ hr {
 
 .button__icon {
     color: #BAB5A4;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 0 10px 0 0;
 }
 
@@ -135,19 +141,27 @@ hr {
     background-color: #BAB5A4;
     color: #415365;
 }
-
+/* --------------------------------------- problem do rozwiązania z ikona na :hover w przycisku ---*/
+.navigation__a:hover~.button__icon {
+    background-color: #BAB5A4;
+    color: #415365;
+}
+/* -------------------------------------------------------------------------------------------------*/
 .navigation__a:active {
     transform: scale(0.95);
 }
 
-.navigation__ul {
+.navigation__ul { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     list-style-type: none;
     padding: 40px 20px;
 }
 
 
 .navigation__li {
-    display: inline-block;
+   margin-right: 3px;
 }
 
 .navigation__li:hover {
