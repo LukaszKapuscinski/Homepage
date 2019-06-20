@@ -1,15 +1,23 @@
 html {
     margin: 0;
 }
-
-main {
-    display: flex;
-    justify-content: center;
+body {
+    background-color: #eee;
 }
 
+
+
 .article {
-    display: flex;
-    flex-direction: column;
+    
+}
+
+.article__h4 {
+    color: red;
+
+}
+
+.article__paragraph {
+    color: red;
 }
 
 .background-color {
@@ -17,65 +25,26 @@ main {
     min-height: 80vh;
 }
 
-.cont {
+.contener {
+    flex-flow: row wrap;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    width: 80vw;
-    flex-wrap: wrap;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-.item1 {
-    width: 100%;
-    background-color: #fff;
-    padding: 20px;
+.header-container {
+    display: flex;
+    width: 50%;
+    margin: 0 20px 0 50%;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20%  0 20% 0;
 }
-
-.item2 {
-    width: 30%;
-    background-color: #dad;
-    padding: 20px;
-    margin: 0 40%;
-}
-
-.item3 {
-    width: 40%;
-    background-color: #ede;
-    padding: 20px;
-}
-
-.item4 {
-    width: 30%;
-    background-color: #abc;
-    padding: 20px;
-}
-
-.item5 {
-    width: 45%;
-    background-color: #daa;
-    padding: 20px;
-}
-
-.item6 {
-    width: 45%;
-    background-color: #edd;
-    padding: 20px;
-}
-
-.item7 {
-    width: 10%;
-    background-color: #bcd;
-    padding: 20px;
-}
-
-.item8 {
-    width: 100%;
-    background-color: #234;
-    padding: 20px;
-}
-
 .hero-image {
-    background-image: url('../IMG/background.png');
+    background-image: url('../IMG/statek-kosmiczny.jpg');
     min-height: 80vh;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -86,34 +55,101 @@ main {
 }
 
 .hero-image__h1 {
+    display: block;
     margin: 0;
+    color: white;
+    flex-basis: 100%;
+}
+.hero-image__h2 {
+    color: white;
+    flex-basis: 100%;
+    margin: 0;
+    padding :20px 30px 0 0;
 }
 
-.ontainer {
-    flex-direction: row;
+.item1 {
+    flex-basis: 100%;
+    background-color: #fff;
+    padding: 20px;
+    order: -10;
 }
 
-.section {
-    display: flex;
-    flex-direction: column;
-}
-
-.section__h2 {
-    order: -3;
-}
-
-.section__h3 {
+.item2 {
+    flex: 1 2;
+    flex-basis: 45%;
+    background-color: #dad;
+    padding: 20px;
+    margin: 0;
     order: -2;
 }
 
-.article__h4 {
-    flex: 1 100%;
-    align-self: flex-start;
-    width: 1000px;
-    color: white;
+.item3 {
+    display: inline-flex;
+    flex:2 5;
+    flex-basis: 45%;
+    background-color: #ede;
+    padding: 20px;
 }
 
-.article__paragraph {
-    align-items: flex-end;
-    color: white;
+.item4 {
+    flex-basis: 30%;
+    background-color: #abc;
+    padding: 20px;
+}
+
+.item5 {
+    flex-basis: 30%;
+    background-color: #daa;
+    padding: 20px;
+    order: 1;
+}
+
+.item6 {
+    flex-basis: 30%;
+    background-color: #edd;
+    padding: 20px;
+}
+
+.item7 {
+    flex-basis: 90%;
+    background-color: #bcd;
+    padding: 20px;
+}
+.item8 {
+    display: block;
+    justify-items: center;
+    align-self: flex-start;
+    flex-basis: 90%;
+    background-color: #111;
+    padding: 20px;
+    color: #fff;
+    order: -5;
+    margin: 0 40px 0;
+}
+
+.item9 {
+    flex-basis: 100%;
+    background-color: #234;
+    padding: 20px;
+    height: 20vh;
+}
+.navigation {
+    height: 20vh;
+}
+
+.navigation__ul{
+    display: flex;
+    list-style: none;
+    
+}
+.navigation__a {
+    text-decoration: none;
+    padding: 30px 50px;
+    margin-right:2px;
+    background-color: red;
+
+}
+.wrapper {
+    margin: auto;
+    width: 1200px;
 }
