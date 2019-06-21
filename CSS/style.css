@@ -32,7 +32,7 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-.article__h4 {
+.article__title-s-size {
     color: #415365;
     font-family: 'Noto Serif', serif;
     font-size: 20px;
@@ -91,7 +91,7 @@ html {
     text-align: center;
 }
 
-.footer__h2 {
+.footer__title-l-size {
     color: #BAB5A4;
     font-family: 'Noto Serif', serif;
     font-size: 35px;
@@ -106,7 +106,7 @@ html {
     text-align: center;
 }
 
-.header__h1 {
+.footer__title-l-size {
     color: #BAB5A4;
     font-family: 'Noto Serif', serif;
     font-size: 35px;
@@ -132,7 +132,7 @@ html {
     padding: 30px;
 }
 
-.navigation__a {
+.navigation__link {
     background-color: #415365;
     color: #BAB5A4;
     display: inline-block;
@@ -142,21 +142,21 @@ html {
     text-decoration: none;
 }
 
-.navigation__a:hover {
+.navigation__link:hover {
     background-color: #BAB5A4;
     color: #415365;
 }
 /* --------------------------------------- problem do rozwiązania z ikona na :hover w przycisku ---*/
-.navigation__a:hover ~ .button__icon {
+.navigation__link:hover ~ .button__icon {
     background-color: #BAB5A4;
     color: #415365;
 }
 /* -------------------------------------------------------------------------------------------------*/
-.navigation__a:active {
+.navigation__link:active {
     transform: scale(0.95);
 }
 
-.navigation__ul { 
+.navigation__list { 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -166,11 +166,11 @@ html {
 }
 
 
-.navigation__li {
+.navigation__item {
    margin-right: 3px;
 }
 
-.navigation__li:hover {
+.navigation__item:hover {
     color: #415365;
 }
 
@@ -178,7 +178,7 @@ html {
     padding: 40px 20px;
 }
 
-.section__h2 {
+.section__title-l-size {
     color: #1F252A;
     font-family: 'Noto Serif', serif;
     font-size: 30px;
@@ -186,7 +186,7 @@ html {
     padding: 10px 10px;
 }
 
-.section__h3 {
+.section__title-m-size {
     color: #6E665F;
     font-family: 'Noto Serif', serif;
     font-size: 25px;

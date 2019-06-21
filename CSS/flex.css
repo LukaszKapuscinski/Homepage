@@ -11,7 +11,7 @@ body {
     
 }
 
-.article__h4 {
+.article__title-s-size {
     color: red;
 
 }
@@ -34,7 +34,7 @@ body {
     justify-content: center;
 }
 
-.header-container {
+.header__container {
     display: flex;
     width: 50%;
     margin: 0 20px 0 50%;
@@ -43,7 +43,7 @@ body {
     align-items: flex-end;
     padding: 20%  0 20% 0;
 }
-.hero-image {
+.hero__image {
     background-image: url('../IMG/statek-kosmiczny.jpg');
     min-height: 80vh;
     background-position: bottom center;
@@ -54,13 +54,13 @@ body {
 
 }
 
-.hero-image__h1 {
+.hero-image__title-l-size{
     display: block;
     margin: 0;
     color: white;
     flex-basis: 100%;
 }
-.hero-image__h2 {
+.hero-image__title-xl-size {
     color: white;
     flex-basis: 100%;
     margin: 0;
@@ -137,12 +137,12 @@ body {
     height: 20vh;
 }
 
-.navigation__ul{
+.hero-image__title-xl-size{
     display: flex;
     list-style: none;
     
 }
-.navigation__a {
+.navigation__link {
     text-decoration: none;
     padding: 30px 50px;
     margin-right:2px;
