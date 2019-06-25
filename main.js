@@ -1,19 +1,10 @@
-console.log('Hell O!');
-const name = 'Lukasz Kapuscinski';
-console.log(name);
+
+const imie = 'łukasz';
+const wiek = 30;
+const welcome = (name, age) => {
+    
+    console.log('Podaj swoje ${imie} i swój ${wiek}');
+};
+welcome('luk', 33);
 
 
-console.log(`Nazywam się ${name} `);
-
-console.log('witaj przybyszu 🚀');
-
-
-
-const about = document.querySelector('.about__paragraph--js');
-
-console.log(about);
-
-
-const paragraphs = document.querySelectorAll('p');
-
-console.log(paragraphs);
