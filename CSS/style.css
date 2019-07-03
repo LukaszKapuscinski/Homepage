@@ -99,6 +99,12 @@ html {
     padding: 40px 10px;
 }
 
+.form {
+    width: 600px;
+    height: 600px;
+    margin: 200px auto;
+}
+
 .header {
     background: linear-gradient(180deg, rgba(31,37,42,1) 0%, rgba(65,83,101,1) 57%, rgba(186,181,164,1) 92%);
 
