@@ -20,29 +20,36 @@
 <body>
 
     <main>
-        <form action="" class="form">
+        <form action="https://dev.cotenfrontend.pl" method="POST" class="form">
             <p>
-                <label for="name">Your name <br>
-                    <input type="text" placeholder="please type your name" name="name" id="name">
+                <label for="name">Your name :<br>
+                    <input type="text" required placeholder="please type your name" name="name" id="name">
                 </label>
                 <br>
                 <br>
-                <label for="surname">Your surname <br>
+                <!--
+                <label for="riddle">Riddle : <br>
+                    <input type="text"  name="riddle" id="riddle">
+                </label>
+                -->
+                <br>
+                <br>
+                <label for="surname">Your surname :<br>
                     <input type="text" name="surname" value="Kapuscinski" id="name">
                 </label>
                 <br>
                 <br>
-                <label for="age">Age <br>
+                <label for="age">Age :<br>
                     <input type="number" name="age" value=31 id="age">
                 </label>
                 <br>
                 <br>
-                <label for="telephone">Phone number <br>
+                <label for="telephone">Phone number :<br>
                     <input type="tel" name="telephone" id="telephone">
                 </label>
                 <br>
                 <br>
-                <label for="email">email adress:<br>
+                <label for="email">Email adress :<br>
                     <input type="email" name="email" id="email">
                 </label>
                 <br>
@@ -72,12 +79,13 @@
                 <input type="checkbox" checked value="ford fiesta" name="mycheckbox" id="mycheckbox2">
             </p>
             <p>
-                <input type="range" min="0" max="100" step="10" value="10" name="mycheckbox" id="mycheckbox">
-                <label for="mychecbox">check1</label>
+                <input type="range" min="0" max="100" step="10" value="10" name="range" id="range">
+                <label for="range">range</label>
             </p>
             <p>
                 <label for="password">password</label>
-                <input type="password"  name="password" id="password">
+                <input type="password" name="password" id="password"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
             </p>
             <p>
                 <label for="file">Check avatar</label><br>
@@ -93,10 +101,11 @@
                 </select>
             </p>
             <p>
-                    <label for="textarea">Check avatar</label><br>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10">wpisz co chcesz</textarea>
-                </p>
-                
+                <label for="textarea">Check avatar</label><br>
+                <textarea name="textarea" id="textarea" cols="30" rows="10">wpisz co chcesz</textarea>
+            </p>
+            <input type="submit" value="Wyślij na serwer">
+
         </form>
     </main>
 
